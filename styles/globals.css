@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ModernNo20";
+  src: url("../public/fonts/Modern\ No.\ 20.ttf");
+}
+
+@font-face {
+  font-family: "CascadiaMono";
+  src: url("../public/fonts/CascadiaMono.ttf");
+}
+
+.nav-text {
+  @apply font-secondary text-base text-black;
+}
