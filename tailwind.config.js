@@ -10,7 +10,8 @@ module.exports = {
       black: "#14110F",
       orange: "#E5A061",
       white: "#F9F8F7",
-      "beige-100": "#6DCD3",
+      "beige-100": "#E6DCD3",
+      "beige-100-50": "rgba(230, 220, 211, 0.5)",
       "beige-200": "#B6A79D",
     },
     fontFamily: {

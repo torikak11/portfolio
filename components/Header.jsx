@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 flex flex-row items-center justify-between p-5 max-w-7xl mx-auto z-20">
+    <header className="sticky top-0 flex flex-row items-center justify-between p-5 z-20 max-w-7xl mx-auto">
       {/* Social Icons */}
       <motion.div
         initial={{
@@ -22,21 +22,24 @@ const Header = () => {
         }}
         className="flex flex-row items-center gap-4"
       >
-        <SocialIcon bgColor="transparent" fgColor="#14110F" />
+        <SocialIcon bgColor="transparent" fgColor="#B6A79D" target="_blank" />
         <SocialIcon
           url="mailto:victoriakratzke@gmail.com"
           bgColor="transparent"
-          fgColor="#14110F"
+          fgColor="#B6A79D"
+          target="_blank"
         />
         <SocialIcon
           url="https://www.linkedin.com/in/victorializzi"
           bgColor="transparent"
-          fgColor="#14110F"
+          fgColor="#B6A79D"
+          target="_blank"
         />
         <SocialIcon
           url="https://www.github.com/torikak11"
           bgColor="transparent"
-          fgColor="#14110F"
+          fgColor="#B6A79D"
+          target="_blank"
         />
       </motion.div>
       {/* Navigation */}
@@ -57,16 +60,16 @@ const Header = () => {
         className="flex flex-row items-center gap-12 hidden md:flex"
       >
         <div className="w-20 text-center">
-          <p className="nav-text">Home</p>
+          <p className="navText">Home</p>
         </div>
         <div className="w-20 text-center">
-          <p className="nav-text">Projects</p>
+          <p className="navText">Projects</p>
         </div>
         <div className="w-20 text-center">
-          <p className="nav-text">Resume</p>
+          <p className="navText">Resume</p>
         </div>
         <div className="w-20 text-center">
-          <p className="nav-text">Contact</p>
+          <p className="navText">Contact</p>
         </div>
       </motion.div>
     </header>

@@ -12,6 +12,10 @@
   src: url("../public/fonts/CascadiaMono.ttf");
 }
 
-.nav-text {
-  @apply font-secondary text-base text-black;
+.navText {
+  @apply font-secondary text-lg text-black;
+}
+
+.primaryButton {
+  @apply font-primary tracking-wider uppercase py-2 px-8 rounded-xl transition-all duration-300 hover:border hover:border-orange hover:text-orange;
 }
