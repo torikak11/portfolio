@@ -2,18 +2,20 @@
 import BackgroundCode from "./BackgroundCode";
 import SkillCard from "./SkillCard";
 import Title from "./Title";
+import SideTitle from "./SideTitle";
 import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div className="max-w-5xl mx-auto relative">
+    <div className="max-w-6xl mx-auto relative">
+      <SideTitle name="skills" />
       <BackgroundCode
         image="/../public/images/bg-code-skills.png"
         alignRight={true}
         width={300}
         height={300}
       />
-      <div className="py-40 flex flex-col md:flex-row justify-center md:justify-between items-center relative">
+      <div className="px-10 py-52 flex flex-col md:flex-row justify-center md:justify-between items-center relative">
         <motion.div
           initial={{
             y: 100,

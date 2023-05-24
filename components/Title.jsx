@@ -20,7 +20,7 @@ const Title = ({ name }) => {
       viewport={{
         once: true,
       }}
-      className="flex flex-col w-[70px] justify-center"
+      className="hidden md:flex flex-col w-[70px] justify-center"
     >
       <h2 className="font-primary text-7xl uppercase text-orange text-center">
         {firstLetter}
