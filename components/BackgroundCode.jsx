@@ -7,7 +7,7 @@ const BackgroundCode = ({ image, alignRight, width, height }) => {
   return (
     <motion.div
       initial={{
-        y: -100,
+        y: -50,
         opacity: 0,
       }}
       whileInView={{
@@ -29,8 +29,8 @@ const BackgroundCode = ({ image, alignRight, width, height }) => {
         height={height}
         className={
           alignRight
-            ? "absolute top-[290px] right-[30px] opacity-60"
-            : "absolute top-[290px] left-[30px] opacity-60"
+            ? "absolute top-[100px] right-[30px] opacity-50"
+            : "absolute top-[100px] left-[30px] opacity-50"
         }
       />
     </motion.div>

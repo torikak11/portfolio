@@ -18,7 +18,7 @@ const Home = () => {
 
       {/* Projects */}
 
-      {/* Resume */}
+      {/* About Me / Resume? */}
 
       {/* Contact Me */}
     </div>

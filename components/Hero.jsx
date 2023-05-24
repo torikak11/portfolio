@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Hero = () => {
   const [text, count] = useTypewriter({
-    words: ["a Software Engineer.", "a Coffee Enthusiast.", "Victoria Lizzi."],
+    words: ["a Full-Stack Developer.", "a Coffee Enthusiast.", "Victoria Lizzi."],
     loop: 1,
     delaySpeed: 2000,
     cursor: true,
