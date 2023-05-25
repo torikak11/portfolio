@@ -16,11 +16,12 @@ const Title = ({ name }) => {
       }}
       transition={{
         duration: 1,
+        delay: 1,
       }}
       viewport={{
         once: true,
       }}
-      className="hidden md:flex flex-col w-[70px] justify-center"
+      className="hidden lg:flex flex-col w-[70px] justify-center"
     >
       <h2 className="font-primary text-7xl uppercase text-orange text-center">
         {firstLetter}

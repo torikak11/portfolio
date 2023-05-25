@@ -2,6 +2,7 @@ import Header from "@components/Header";
 import Hero from "@components/Hero";
 import Skills from "@components/Skills";
 import Projects from "@components/Projects";
+import About from "@components/About";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
       </section>
 
       {/* Skills */}
-      <section id="skills" className="bg-beige-100/40">
+      <section id="skills">
         <Skills />
       </section>
 
@@ -23,6 +24,9 @@ const Home = () => {
       </section>
 
       {/* About Me / Resume? */}
+      <section id="about">
+        <About />
+      </section>
 
       {/* Contact Me */}
     </div>

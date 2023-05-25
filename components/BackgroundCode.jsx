@@ -16,7 +16,7 @@ const BackgroundCode = ({ image, alignRight, width, height }) => {
       }}
       transition={{
         duration: 1,
-        delay: 0.5,
+        delay: 1,
       }}
       viewport={{
         once: true,

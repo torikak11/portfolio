@@ -22,7 +22,7 @@ const Hero = () => {
         width={700}
         height={700}
       />
-      <div className="h-screen flex gap-10 flex-col md:flex-row items-center justify-center md:justify-between">
+      <div className="h-screen flex gap-10 flex-col lg:flex-row items-center justify-center lg:justify-between">
         <Title name="welcome" />
         <motion.div
           initial={{
@@ -35,17 +35,18 @@ const Hero = () => {
           }}
           transition={{
             duration: 1,
-            delay: 1,
+            delay: 2,
           }}
-          className="w-[600px] h-[300px] rounded-lg bg-beige-100-50 flex flex-col justify-center items-center z-10"
+          className="w-[700px] h-[400px] rounded-lg shadow-xl bg-beige-100-50 flex flex-col justify-center items-center z-10"
         >
-          <h1 className="font-secondary text-lg">
+          <h1 className="font-secondary text-lg text-black">
             <span>Hi, I'm {text}</span>
             <Cursor cursorColor="#E5A061" />
           </h1>
+          <p className="mx-6 mt-5 text-center font-secondary text-black">I strive to create intuitive designs while constantly seeking opportunities to learn and grow. Feel free to check out my projects below or continue exploring!</p>
           <div className="mt-8">
             <Link href="#projects">
-              <button className="primaryButton">See More</button>
+              <button className="primaryButton">projects</button>
             </Link>
           </div>
         </motion.div>

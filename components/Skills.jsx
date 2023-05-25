@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div className="max-w-6xl mx-auto relative">
+    <div className="max-w-7xl mx-auto relative">
       <SideTitle name="skills" />
       <BackgroundCode
         image="/../public/images/bg-code-skills.png"
@@ -15,23 +15,28 @@ const Skills = () => {
         width={300}
         height={300}
       />
-      <div className="px-10 py-52 flex flex-col md:flex-row justify-center md:justify-between items-center relative">
+      <div className="mb-80 flex flex-col lg:flex-row justify-center lg:justify-between items-center relative">
         <motion.div
           initial={{
-            y: 100,
+            y: 50,
             opacity: 0,
           }}
-          animate={{
+          whileInView={{
             y: 0,
             opacity: 1,
           }}
           transition={{
             duration: 1,
-            delay: 1,
+            delay: 1.5,
           }}
-          className="bg-white/70 w-[700px] h-[400px] rounded-lg z-10 flex flex-col items-center justify-center"
+          viewport={{
+            once: true,
+          }}
+          className="bg-beige-100/60 w-[800px] h-[500px] rounded-lg shadow-xl z-10 flex flex-col items-center justify-center"
         >
-          <div className="grid grid-cols-5 gap-10">
+          <div className="grid grid-cols-5 gap-12">
+            <SkillCard />
+            <SkillCard />
             <SkillCard />
             <SkillCard />
             <SkillCard />
