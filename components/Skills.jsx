@@ -15,7 +15,7 @@ const Skills = () => {
         width={300}
         height={300}
       />
-      <div className="mb-80 flex flex-col lg:flex-row justify-center lg:justify-between items-center relative">
+      <div className="mb-80 pt-16 flex flex-col lg:flex-row justify-center lg:justify-between items-center relative">
         <motion.div
           initial={{
             y: 50,

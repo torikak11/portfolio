@@ -13,7 +13,7 @@ const Projects = () => {
         width={700}
         height={700}
       />
-      <div className="h-screen mb-80 flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start relative">
+      <div className="pt-16 flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start relative">
         <Title name="projects" />
         <div className="flex flex-col gap-16 mt-20">
           <ProjectCard />

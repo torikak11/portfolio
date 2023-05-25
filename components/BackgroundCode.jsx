@@ -29,7 +29,7 @@ const BackgroundCode = ({ image, alignRight, width, height }) => {
         height={height}
         className={
           alignRight
-            ? "absolute top-[100px] right-[30px] opacity-50"
+            ? "absolute top-[100px] right-[20px] opacity-50"
             : "absolute top-[100px] left-[30px] opacity-50"
         }
       />
