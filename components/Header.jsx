@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 flex flex-row items-center justify-between p-6 z-20 mx-auto">
+    <header className="sticky top-0 flex flex-row items-center justify-between p-6 z-20 mx-auto bg-beige-100/20">
       {/* Social Icons */}
       <motion.div
         initial={{
@@ -59,18 +59,18 @@ const Header = () => {
         }}
         className="flex flex-row items-center gap-12 hidden md:flex"
       >
-        <div className="w-20 text-center">
-          <p className="navText">Home</p>
-        </div>
-        <div className="w-20 text-center">
-          <p className="navText">Projects</p>
-        </div>
+        <a href="#hero">
+          <div className="w-20 text-center navText">Home</div>
+        </a>
+        <a href="#projects">
+          <div className="w-20 text-center navText">Projects</div>
+        </a>
         <div className="w-20 text-center">
           <p className="navText">Resume</p>
         </div>
-        <div className="w-20 text-center">
-          <p className="navText">Contact</p>
-        </div>
+        <a href="#contact">
+          <button className="w-20 text-center navText">Contact</button>
+        </a>
       </motion.div>
     </header>
   );

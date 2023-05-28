@@ -19,5 +19,7 @@ module.exports = {
       secondary: ["CascadiaMono", "mono"],
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwind-scrollbar"),
+  ],
 };

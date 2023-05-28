@@ -7,7 +7,7 @@ import Contact from "@components/Contact";
 
 const Home = () => {
   return (
-    <div className="text-black h-screen overflow-scroll z-0 min-w-full">
+    <div className="text-black h-screen scroll-smooth overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-rounded-full scrollbar-track-beige-100/40 scrollbar-thumb-beige-200/60">
       <Header />
       {/* Hero */}
       <section id="hero">
