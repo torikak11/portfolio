@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 
 export const metadata = {
-  title: "Victoria Lizzi's Portfolio",
+  title: "Victoria Lizzi",
   description: "Welcome to my portfolio",
 };
 

@@ -26,24 +26,6 @@ export default defineType({
       type: "text",
     }),
     defineField({
-      name: "socials",
-      title: "Socials",
-      type: "array",
-      of: [{ type: "reference", to: { type: "social" } }],
-    }),
-    defineField({
-      name: "titles",
-      title: "Titles",
-      type: "array",
-      of: [
-        {
-          name: "title",
-          title: "Title",
-          type: "string",
-        },
-      ],
-    }),
-    defineField({
       name: "backgroundImages",
       title: "BackgroundImages",
       type: "array",
@@ -55,6 +37,12 @@ export default defineType({
           options: {
             hotspot: true,
           },
+          fields: [
+            {
+              name: "alt",
+              type: "string",
+            },
+          ],
         },
       ],
     }),

@@ -11,12 +11,26 @@ export default defineType({
       type: "string",
     }),
     defineField({
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      option: {
+        source: "title",
+      },
+    }),
+    defineField({
       name: "image",
       title: "Image",
       type: "image",
       options: {
         hotspot: true,
       },
+      fields: [
+        {
+          name: "alt",
+          type: "string",
+        },
+      ],
     }),
     defineField({
       name: "summary",

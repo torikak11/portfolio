@@ -1,8 +1,11 @@
 "use client";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import { getSocials } from "@lib/sanity.utils";
 
-const Header = () => {
+
+export default async function Header() {
+  const socials = await getSocials();
   return (
     <header className="sticky top-0 flex flex-row items-center justify-between p-6 z-20 mx-auto bg-beige-100/20">
       {/* Social Icons */}
@@ -22,25 +25,15 @@ const Header = () => {
         }}
         className="flex flex-row items-center gap-6"
       >
-        <SocialIcon bgColor="transparent" fgColor="#B6A79D" target="_blank" />
-        <SocialIcon
-          url="mailto:victoriakratzke@gmail.com"
-          bgColor="transparent"
-          fgColor="#B6A79D"
-          target="_blank"
-        />
-        <SocialIcon
-          url="https://www.linkedin.com/in/victorializzi"
-          bgColor="transparent"
-          fgColor="#B6A79D"
-          target="_blank"
-        />
-        <SocialIcon
-          url="https://www.github.com/torikak11"
-          bgColor="transparent"
-          fgColor="#B6A79D"
-          target="_blank"
-        />
+        {socials.map((social) => (
+          <SocialIcon
+            key={social._id}
+            url={social.url}
+            bgColor="transparent"
+            fgColor="#B6A79D"
+            target="_blank"
+          />
+        ))}
       </motion.div>
       {/* Navigation */}
       <motion.div
@@ -74,6 +67,4 @@ const Header = () => {
       </motion.div>
     </header>
   );
-};
-
-export default Header;
+}
