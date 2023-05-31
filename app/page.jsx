@@ -5,7 +5,8 @@ import Projects from "@components/Projects";
 import About from "@components/About";
 import Contact from "@components/Contact";
 
-export default function Home() {
+
+export default async function Home() {
 
   return (
     <div className="text-black h-screen scroll-smooth overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-rounded-full scrollbar-track-beige-100/40 scrollbar-thumb-beige-200/60">

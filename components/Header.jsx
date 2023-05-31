@@ -1,13 +1,13 @@
 "use client";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
-import { getSocials } from "@lib/sanity.utils";
+import { useState } from "react";
 
+const Header = ({ socials }) => {
+  const [current, setCurrent] = useState(1);
 
-export default async function Header() {
-  const socials = await getSocials();
   return (
-    <header className="sticky top-0 flex flex-row items-center justify-between p-6 z-20 mx-auto bg-beige-100/20">
+    <header className="sticky top-0 flex flex-row items-center justify-between h-16 px-6 z-20 mx-auto bg-beige-100/30">
       {/* Social Icons */}
       <motion.div
         initial={{
@@ -25,15 +25,12 @@ export default async function Header() {
         }}
         className="flex flex-row items-center gap-6"
       >
-        {socials.map((social) => (
-          <SocialIcon
-            key={social._id}
-            url={social.url}
-            bgColor="transparent"
-            fgColor="#B6A79D"
-            target="_blank"
-          />
-        ))}
+        <SocialIcon
+          url="mailto:victoriakratzke@gmail.com"
+          bgColor="transparent"
+          fgColor="#B6A79D"
+          target="_blank"
+        />
       </motion.div>
       {/* Navigation */}
       <motion.div
@@ -52,19 +49,21 @@ export default async function Header() {
         }}
         className="flex flex-row items-center gap-12 hidden md:flex"
       >
-        <a href="#hero">
-          <div className="w-20 text-center navText">Home</div>
+        <a href="#hero" onClick={() => setCurrent(1)}>
+          <div className={current === 1 ? "w-24 text-center activeNavText" : "w-24 text-center navText"}>Home</div>
         </a>
-        <a href="#projects">
-          <div className="w-20 text-center navText">Projects</div>
+        <a href="#projects" onClick={() => setCurrent(2)}>
+          <div className={current === 2 ? "w-24 text-center activeNavText" : "w-24 text-center navText"}>Projects</div>
         </a>
-        <div className="w-20 text-center">
-          <p className="navText">Resume</p>
-        </div>
-        <a href="#contact">
-          <button className="w-20 text-center navText">Contact</button>
+        <a href="#projects" onClick={() => setCurrent(3)}>
+          <div className={current === 3 ? "w-24 text-center activeNavText" : "w-24 text-center navText"}>Resume</div>
+        </a>
+        <a href="#contact" onClick={() => setCurrent(4)}>
+          <div className={current === 4 ? "w-24 text-center activeNavText" : "w-24 text-center navText"}>Contact</div>
         </a>
       </motion.div>
     </header>
   );
 }
+
+export default Header;

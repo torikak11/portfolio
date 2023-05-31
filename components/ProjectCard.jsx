@@ -22,12 +22,13 @@ const ProjectCard = () => {
       viewport={{
         once: true,
       }}
-      className="w-[900px] h-[500px] px-5 rounded-lg shadow-xl bg-beige-100-50 flex flex-row gap-10 justify-center items-center z-10"
+      className="py-10 px-5 rounded-lg shadow-xl bg-beige-100-50 flex flex-col md:flex-row gap-10 justify-center items-center z-10"
     >
       <Image
         src="/../public/images/color-picker-01.png"
-        height={200}
-        width={220}
+        alt="Screenshot of the color picker chrome extension"
+        height={300}
+        width={400}
         className="rounded object-cover"
       />
       <div className="flex flex-col gap-6">

@@ -16,7 +16,7 @@ const Title = ({ name }) => {
       }}
       transition={{
         duration: 1,
-        delay: 1,
+        delay: 0.5,
       }}
       viewport={{
         once: true,

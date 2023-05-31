@@ -5,7 +5,7 @@ import Title from "./Title";
 import SideTitle from "./SideTitle";
 import { motion } from "framer-motion";
 
-const Skills = () => {
+const Skills = ({ skills }) => {
   return (
     <div className="max-w-7xl mx-auto relative">
       <SideTitle name="skills" />
@@ -32,9 +32,12 @@ const Skills = () => {
           viewport={{
             once: true,
           }}
-          className="bg-beige-100/60 w-[800px] h-[500px] rounded-lg shadow-xl z-10 flex flex-col items-center justify-center"
+          className="bg-beige-100/60 p-16 rounded-lg shadow-xl z-10 flex flex-col items-center justify-center"
         >
           <div className="grid grid-cols-5 gap-12">
+            <SkillCard />
+            <SkillCard />
+            <SkillCard />
             <SkillCard />
             <SkillCard />
             <SkillCard />

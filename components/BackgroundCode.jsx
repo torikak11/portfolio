@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const BackgroundCode = ({ image, alignRight, width, height }) => {
+const BackgroundCode = ({ image, alignRight, width, height, alt }) => {
   return (
     <motion.div
       initial={{
@@ -16,7 +16,7 @@ const BackgroundCode = ({ image, alignRight, width, height }) => {
       }}
       transition={{
         duration: 1,
-        delay: 1,
+        delay: 0.5,
       }}
       viewport={{
         once: true,
@@ -24,7 +24,7 @@ const BackgroundCode = ({ image, alignRight, width, height }) => {
     >
       <Image
         src={image}
-        alt="background-text"
+        alt={alt}
         width={width}
         height={height}
         className={

@@ -10,7 +10,7 @@ const RootLayout = ({ children }) => {
     <html leng="en">
       <body className="bg-white">
         <main>
-            {children}
+          {children}
         </main>
       </body>
     </html>
