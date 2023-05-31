@@ -1,17 +1,13 @@
-import Image from "next/image";
+import Footer from "@components/Footer";
+import ProjectInfo from "@components/ProjectInfo";
 
 const Project = () => {
   return (
-    <div>
-        {/* image */}
-        {/* title */}
-        {/* short summary */}
-        {/* live site */}
-        {/* demo video */}
-        {/* project explanation */}
-        {/* future aspirations */}
+    <div className="text-black h-screen scroll-smooth overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-rounded-full scrollbar-track-beige-100/40 scrollbar-thumb-beige-200/60">
+      <ProjectInfo />
+      <Footer />
     </div>
-  )
+  );
 };
 
 export default Project;

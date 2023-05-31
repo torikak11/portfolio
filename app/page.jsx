@@ -4,6 +4,7 @@ import Skills from "@components/Skills";
 import Projects from "@components/Projects";
 import About from "@components/About";
 import Contact from "@components/Contact";
+import Footer from "@components/Footer";
 
 
 export default async function Home() {
@@ -35,6 +36,7 @@ export default async function Home() {
       <section id="contact">
         <Contact />
       </section>
+      <Footer />
     </div>
   )
 };

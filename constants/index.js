@@ -75,7 +75,7 @@ export const projects = [
     {
         title: "Color Picker Chrome Extension",
         summary: "A simple color picker Chrome Extension that allows you to pick and save hex value colors from web pages.",
-        image: "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/projects/color-picker-01.png",
+        image: "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/projects/color-picker-02.png",
         alt: "A screenshot of the Color Picker Chrome Extension",
         tags: [
             "HTML5", "CSS", "JavaScript",
@@ -85,7 +85,7 @@ export const projects = [
     {
         title: "Sprout",
         summary: "A goal setting mobile app where the user can set their goals/habits to a plant and watch it grow as they achieve their goal.",
-        image: "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/projects/sprout-01.png",
+        image: "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/projects/sprout-02.png",
         alt: "A screenshot of the Sprout mobile app",
         tags: [
             "React", "Redux", "Node.js", "MongoDB",

@@ -24,6 +24,10 @@
   @apply font-primary text-base text-orange tracking-widest uppercase py-3 px-8 border-2 border-orange rounded-2xl transition duration-300 hover:bg-orange hover:text-white;
 }
 
+.staticButton {
+  @apply font-primary text-base text-orange text-center tracking-widest uppercase py-3 w-48 border-2 border-orange rounded-2xl transition duration-300 hover:bg-orange hover:text-white;
+}
+
 .contactInput {
   @apply outline-none bg-white rounded-md px-2 py-2 w-[400px] border border-beige-200 text-black placeholder-beige-100
 }

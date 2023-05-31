@@ -1,4 +1,5 @@
 import '@/styles/globals.css'
+import Footer from '@components/Footer';
 
 export const metadata = {
   title: "Victoria Lizzi",
