@@ -15,7 +15,7 @@ const About = () => {
         width={700}
         height={700}
       />
-      <div className="my-80 pt-16 flex flex-col lg:flex-row justify-center lg:justify-between items-center">
+      <div className="my-80 pt-16 flex flex-col lg:flex-row gap-80 justify-center lg:justify-between items-center">
         <motion.div
           initial={{
             y: 50,
@@ -27,12 +27,12 @@ const About = () => {
           }}
           transition={{
             duration: 1,
-            delay: 1.5,
+            delay: 1,
           }}
           viewport={{
             once: true,
           }}
-          className="bg-beige-100/60 w-[800px] h-[500px] px-8 rounded-lg shadow-xl z-10 flex flex-col gap-6 items-center justify-center"
+          className="bg-beige-100/60 py-10 px-8 rounded-lg shadow-xl z-10 flex flex-col gap-6 items-center justify-center"
         >
           <p className="font-secondary">
             <span className="text-orange text-lg">Hello again!</span> Thanks for
@@ -57,7 +57,13 @@ const About = () => {
             If you would like a more concise overview of my work experience,
             here is a link to my resume!
           </p>
-          <button className="primaryButton">resume</button>
+          <a
+            className="primaryButton"
+            href="https://toriadev-portfolio.s3.us-west-2.amazonaws.com/resume/V_Lizzi_Resume.pdf"
+            target="_blank"
+          >
+            resume
+          </a>
         </motion.div>
         <div className="flex flex-col gap-8">
           <Title name="about" />

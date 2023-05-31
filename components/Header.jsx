@@ -67,11 +67,11 @@ const Header = () => {
         <a href="#projects" onClick={() => setCurrent(2)}>
           <div className={current === 2 ? "w-24 text-center activeNavText" : "w-24 text-center navText"}>Projects</div>
         </a>
-        <a href="#projects" onClick={() => setCurrent(3)}>
-          <div className={current === 3 ? "w-24 text-center activeNavText" : "w-24 text-center navText"}>Resume</div>
+        <a href="https://toriadev-portfolio.s3.us-west-2.amazonaws.com/resume/V_Lizzi_Resume.pdf" target="_blank">
+          <div className="w-24 text-center navText">Resume</div>
         </a>
-        <a href="#contact" onClick={() => setCurrent(4)}>
-          <div className={current === 4 ? "w-24 text-center activeNavText" : "w-24 text-center navText"}>Contact</div>
+        <a href="#contact" onClick={() => setCurrent(3)}>
+          <div className={current === 3 ? "w-24 text-center activeNavText" : "w-24 text-center navText"}>Contact</div>
         </a>
       </motion.div>
     </header>

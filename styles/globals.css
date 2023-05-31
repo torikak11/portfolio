@@ -13,11 +13,11 @@
 }
 
 .navText {
-  @apply font-secondary text-lg text-black hover:border-b-4 hover:border-orange/40;
+  @apply font-secondary text-base text-black hover:border-b-4 hover:border-orange/40;
 }
 
 .activeNavText {
-  @apply font-secondary text-lg text-black border-b-4 border-orange;
+  @apply font-secondary text-base text-black border-b-4 border-orange;
 }
 
 .primaryButton {

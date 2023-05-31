@@ -10,7 +10,6 @@ import emailjs from "@emailjs/browser";
 const Contact = () => {
   const contactForm = useRef();
   const onSubmit = (e) => {
-    //window.location.href = `mailto:victoriakratzke@gmail.com?subject=${formData.subject}&body=${formData.name} wrote: ${formData.message}`;
     e.preventDefault();
     emailjs
       .sendForm(
@@ -30,7 +29,7 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <div className="max-w-7xl mx-auto relative">
+    <div className="max-w-6xl mx-auto relative">
       <SideTitle name="contact me" />
       <BackgroundCode
         image="/../public/images/bg-code-home.png"
@@ -38,7 +37,7 @@ const Contact = () => {
         width={700}
         height={700}
       />
-      <div className="mb-96 pt-16 flex flex-col lg:flex-row justify-center lg:justify-between items-center">
+      <div className="mb-96 pt-16 flex flex-col lg:flex-row gap-80 justify-center lg:justify-between items-center">
         <div className="flex flex-col gap-8">
           <Title name="Contact" />
           <Title name="Me" />
@@ -54,12 +53,12 @@ const Contact = () => {
           }}
           transition={{
             duration: 1,
-            delay: 1.5,
+            delay: 1,
           }}
           viewport={{
             once: true,
           }}
-          className="bg-beige-100/60 w-[800px] py-16 px-24 rounded-lg shadow-xl z-10 flex flex-col gap-10 items-center justify-center"
+          className="bg-beige-100/60 py-16 px-24 rounded-lg shadow-xl z-10 flex flex-col gap-10 items-center justify-center"
         >
           <p className="font-secondary text-center">
             If you have any questions, comments, or just want to have a quick

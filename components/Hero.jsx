@@ -54,9 +54,9 @@ export default function Hero({ pageInfo, bgImages }) {
             exploring!
           </p>
           <div className="mt-8">
-            <Link href="#projects">
-              <button className="primaryButton">projects</button>
-            </Link>
+            <a href="#projects">
+              <button className="primaryButton">see more</button>
+            </a>
           </div>
         </motion.div>
       </div>

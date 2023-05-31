@@ -17,7 +17,7 @@ const ProjectCard = ({ title, summary, image, alt, tags, gitHub }) => {
       }}
       transition={{
         duration: 1,
-        delay: 1.5,
+        delay: 1,
       }}
       viewport={{
         once: true,
