@@ -3,7 +3,7 @@ import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const Header = ({ socials }) => {
+const Header = () => {
   const [current, setCurrent] = useState(1);
 
   return (
@@ -27,6 +27,18 @@ const Header = ({ socials }) => {
       >
         <SocialIcon
           url="mailto:victoriakratzke@gmail.com"
+          bgColor="transparent"
+          fgColor="#B6A79D"
+          target="_blank"
+        />
+        <SocialIcon
+          url="https://www.linkedin.com/in/victorializzi/"
+          bgColor="transparent"
+          fgColor="#B6A79D"
+          target="_blank"
+        />
+        <SocialIcon
+          url="https://github.com/torikak11"
           bgColor="transparent"
           fgColor="#B6A79D"
           target="_blank"

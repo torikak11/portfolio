@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="max-w-7xl mx-auto relative">
+    <div className="max-w-6xl mx-auto relative">
       <SideTitle name="about me" />
       <BackgroundCode
         image="/../public/images/bg-code-home.png"

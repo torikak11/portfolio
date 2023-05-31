@@ -4,10 +4,11 @@ import SkillCard from "./SkillCard";
 import Title from "./Title";
 import SideTitle from "./SideTitle";
 import { motion } from "framer-motion";
+import { skills } from "../constants";
 
-const Skills = ({ skills }) => {
+const Skills = () => {
   return (
-    <div className="max-w-7xl mx-auto relative">
+    <div className="max-w-6xl mx-auto relative">
       <SideTitle name="skills" />
       <BackgroundCode
         image="/../public/images/bg-code-skills.png"
@@ -35,21 +36,9 @@ const Skills = ({ skills }) => {
           className="bg-beige-100/60 p-16 rounded-lg shadow-xl z-10 flex flex-col items-center justify-center"
         >
           <div className="grid grid-cols-5 gap-12">
-            <SkillCard />
-            <SkillCard />
-            <SkillCard />
-            <SkillCard />
-            <SkillCard />
-            <SkillCard />
-            <SkillCard />
-            <SkillCard />
-            <SkillCard />
-            <SkillCard />
-            <SkillCard />
-            <SkillCard />
-            <SkillCard />
-            <SkillCard />
-            <SkillCard />
+            {skills.map((skill) => (
+              <SkillCard url={skill.image} alt={skill.alt} name={skill.name} key={skill.name} />
+            ))}
           </div>
         </motion.div>
         <Title name="skills" />

@@ -49,7 +49,9 @@ export default function Hero({ pageInfo, bgImages }) {
             <Cursor cursorColor="#E5A061" />
           </h1>
           <p className="mx-6 mt-5 text-center font-secondary text-black">
-            coming soon...
+            I strive to create intuitive designs and seek opportunities to learn
+            and grow. Feel free to check out my projects below or continue
+            exploring!
           </p>
           <div className="mt-8">
             <Link href="#projects">
@@ -60,4 +62,4 @@ export default function Hero({ pageInfo, bgImages }) {
       </div>
     </div>
   );
-};
+}
