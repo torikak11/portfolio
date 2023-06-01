@@ -10,10 +10,10 @@ const About = () => {
     <div className="max-w-6xl mx-auto relative">
       <SideTitle name="about me" />
       <BackgroundCode
-        image="/../public/images/bg-code-home.png"
+        image="https://toriadev-portfolio.s3.us-west-2.amazonaws.com/background/bg-code-about.png"
         alignRight={true}
-        width={700}
-        height={700}
+        width={500}
+        height={500}
       />
       <div className="my-80 pt-16 flex flex-col lg:flex-row gap-80 justify-center lg:justify-between items-center">
         <motion.div

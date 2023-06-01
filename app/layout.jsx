@@ -9,6 +9,9 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html leng="en">
+      <head>
+        <link rel="icon" href="https://toriadev-portfolio.s3.us-west-2.amazonaws.com/portfolio-logo.png" />
+      </head>
       <body className="bg-white">
         <main>
           {children}

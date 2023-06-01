@@ -3,8 +3,11 @@ import Image from "next/image";
 import React from "react";
 import SkillTags from "./SkillTags";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
-const ProjectCard = ({ title, summary, image, alt, tags, gitHub }) => {
+const ProjectCard = ({ title, summary, image, alt, tags, gitHub, slug }) => {
+  const fullSlug = "/project/" + slug;
+
   return (
     <motion.div
       initial={{
@@ -42,7 +45,7 @@ const ProjectCard = ({ title, summary, image, alt, tags, gitHub }) => {
           ))}
         </div>
         <div className="flex flex-row items-center gap-10 mt-4 mb-6">
-          <button className="primaryButton">view project</button>
+          <Link className="primaryButton" href={fullSlug}>view project</Link>
           <a className="primaryButton" href={gitHub} target="_blank">
             git hub
           </a>

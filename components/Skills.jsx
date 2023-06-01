@@ -11,10 +11,10 @@ const Skills = () => {
     <div className="max-w-6xl mx-auto relative">
       <SideTitle name="skills" />
       <BackgroundCode
-        image="/../public/images/bg-code-skills.png"
+        image="https://toriadev-portfolio.s3.us-west-2.amazonaws.com/background/bg-code-skills.png"
         alignRight={true}
-        width={300}
-        height={300}
+        width={500}
+        height={500}
       />
       <div className="mb-80 pt-16 flex flex-col lg:flex-row justify-center lg:justify-between items-center relative">
         <motion.div

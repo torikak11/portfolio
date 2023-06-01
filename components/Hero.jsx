@@ -21,7 +21,7 @@ export default function Hero({ pageInfo, bgImages }) {
   return (
     <div className="max-w-6xl mx-auto relative">
       <BackgroundCode
-        image="/../public/images/bg-code-home.png"
+        image="https://toriadev-portfolio.s3.us-west-2.amazonaws.com/background/bg-code-hero.png"
         alt=""
         alignRight={false}
         width={700}

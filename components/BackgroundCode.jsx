@@ -29,8 +29,8 @@ const BackgroundCode = ({ image, alignRight, width, height, alt }) => {
         height={height}
         className={
           alignRight
-            ? "absolute top-[100px] right-[20px] opacity-50"
-            : "absolute top-[100px] left-[30px] opacity-50"
+            ? "absolute top-[50px] right-[20px] opacity-50"
+            : "absolute top-[50px] left-[30px] opacity-50"
         }
       />
     </motion.div>
