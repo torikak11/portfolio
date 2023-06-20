@@ -88,11 +88,11 @@ export const projects = [
   {
     title: "Sprout",
     summary:
-      "A goal setting mobile app where the user can set their goals/habits to a plant and watch it grow as they achieve their goal.",
+      "A goal setting mobile app where the user can set their goals to a plant and watch it grow as they achieve their goal.",
     image:
       "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/projects/sprout-02.png",
     alt: "A screenshot of the Sprout mobile app",
-    tags: ["React", "Redux", "Node.js", "MongoDB"],
+    tags: ["React Native", "Node.js", "Express", "MongoDB"],
     gitHub: "https://github.com/torikak11/sprout",
     slug: "sprout"
   },
@@ -103,7 +103,7 @@ export const projects = [
     image:
       "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/projects/recipe-generator-01.png",
     alt: "A screenshot of the Recipe Generator web page",
-    tags: ["React", "Next.js", "REST API"],
+    tags: ["React", "Next.js", "REST API", "Tailwind"],
     gitHub: "https://github.com/torikak11/recipe-generator",
     slug: "recipe-generator"
   },
@@ -127,8 +127,9 @@ export const projectInfo = [
       "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/projects/sprout-02.png",
     alt: "A screenshot of the Color Picker Chrome Extension",
     summary:
-      "A simple color picker Chrome Extension that allows you to pick and save hex value colors from web pages.",
+      "A goal setting mobile app where the user can set their goals to a plant and watch it grow as they achieve their goal.",
     link: "https://github.com/torikak11/sprout",
+    link02: "https://github.com/torikak11/sprout-api",
     overview: [
       ""
     ],
@@ -144,14 +145,14 @@ export const projectInfo = [
     alt: "A screenshot of the Recipe Generator web app",
     summary:
       "A web app that let's the user input ingredients to generate relevant recipes.",
-    link: "https://github.com/torikak11/recipe-generator",
+    link: "https://recipe-generator-tawny.vercel.app",
     overview: [
       ""
     ],
     improvements: [
       ""
     ],
-    livePage: false,
+    livePage: true,
   },
   {
     title: "color picker chrome extension",

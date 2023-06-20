@@ -47,8 +47,7 @@ const About = () => {
           <p className="font-secondary">
             When I am not coding, you can find me exploring the{" "}
             <span className="text-orange">outdoors</span> with my husband,
-            trying to improve my <span className="text-orange">latte art</span>{" "}
-            skills (they are non-existent at the moment, but I am determined!),
+            <span className="text-orange">traveling</span> to new places,
             playing a <span className="text-orange">game</span> on my Nintendo
             Switch, or enjoying a good <span className="text-orange">book</span>
             .
