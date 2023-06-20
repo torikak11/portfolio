@@ -42,10 +42,9 @@ export const skills = [
     alt: "Logo of Node.js",
   },
   {
-    name: "Redux",
-    image:
-      "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/skills/redux.png",
-    alt: "Logo of Redux",
+    name: "Express.js",
+    image: "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/skills/express.png",
+    alt: "Logo of Express.js",
   },
   {
     name: "Tailwind CSS",
@@ -87,17 +86,6 @@ export const skills = [
 
 export const projects = [
   {
-    title: "Color Picker Chrome Extension",
-    summary:
-      "A simple color picker Chrome Extension that allows you to pick and save hex value colors from web pages.",
-    image:
-      "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/projects/color-picker-02.png",
-    alt: "A screenshot of the Color Picker Chrome Extension",
-    tags: ["HTML5", "CSS", "JavaScript"],
-    gitHub: "https://github.com/torikak11/color-picker-chrome-extension",
-    slug: "color-picker"
-  },
-  {
     title: "Sprout",
     summary:
       "A goal setting mobile app where the user can set their goals/habits to a plant and watch it grow as they achieve their goal.",
@@ -108,9 +96,63 @@ export const projects = [
     gitHub: "https://github.com/torikak11/sprout",
     slug: "sprout"
   },
+  {
+    title: "Recipe Generator",
+    summary:
+      "A web app that let's the user input ingredients to generate relevant recipes.",
+    image:
+      "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/projects/recipe-generator-01.png",
+    alt: "A screenshot of the Recipe Generator web page",
+    tags: ["React", "Next.js", "REST API"],
+    gitHub: "https://github.com/torikak11/recipe-generator",
+    slug: "recipe-generator"
+  },
+  {
+    title: "Color Picker Chrome Extension",
+    summary:
+      "A simple color picker Chrome Extension that allows you to pick and save hex value colors from web pages.",
+    image:
+      "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/projects/color-picker-02.png",
+    alt: "A screenshot of the Color Picker Chrome Extension",
+    tags: ["HTML5", "CSS", "JavaScript"],
+    gitHub: "https://github.com/torikak11/color-picker-chrome-extension",
+    slug: "color-picker"
+  },
 ];
 
 export const projectInfo = [
+  {
+    title: "sprout",
+    image:
+      "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/projects/sprout-02.png",
+    alt: "A screenshot of the Color Picker Chrome Extension",
+    summary:
+      "A simple color picker Chrome Extension that allows you to pick and save hex value colors from web pages.",
+    link: "https://github.com/torikak11/sprout",
+    overview: [
+      ""
+    ],
+    improvements: [
+      ""
+    ],
+    livePage: false,
+  },
+  {
+    title: "recipe generator",
+    image:
+      "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/projects/recipe-generator-01.png",
+    alt: "A screenshot of the Recipe Generator web app",
+    summary:
+      "A web app that let's the user input ingredients to generate relevant recipes.",
+    link: "https://github.com/torikak11/recipe-generator",
+    overview: [
+      ""
+    ],
+    improvements: [
+      ""
+    ],
+    livePage: false,
+  },
   {
     title: "color picker chrome extension",
     image:
@@ -126,22 +168,6 @@ export const projectInfo = [
     ],
     improvements: [
       "One main improvment for this extension that I would like to implement soon is to add rgb values to the color values saved. This will be of use to those who prefer to use rgb values in their work.",
-    ],
-    livePage: false,
-  },
-  {
-    title: "sprout",
-    image:
-      "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/projects/sprout-02.png",
-    alt: "A screenshot of the Color Picker Chrome Extension",
-    summary:
-      "A simple color picker Chrome Extension that allows you to pick and save hex value colors from web pages.",
-    link: "https://github.com/torikak11/sprout",
-    overview: [
-      ""
-    ],
-    improvements: [
-      ""
     ],
     livePage: false,
   },

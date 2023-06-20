@@ -1,7 +1,6 @@
 import Footer from "@components/Footer";
 import ProjectInfo from "@components/ProjectInfo";
 import { projectInfo } from "@constants";
-import Link from "next/link";
 
 const Project = () => {
   return (
