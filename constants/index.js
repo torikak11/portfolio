@@ -125,7 +125,7 @@ export const projectInfo = [
     title: "sprout",
     image:
       "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/projects/sprout-02.png",
-    alt: "A screenshot of the Color Picker Chrome Extension",
+    alt: "A screenshot of the Sprout Mobile App",
     summary:
       "A goal setting mobile app where the user can set their goals to a plant and watch it grow as they achieve their goal.",
     link: "https://github.com/torikak11/sprout",
