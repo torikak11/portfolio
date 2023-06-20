@@ -2,12 +2,37 @@ import Image from "next/image";
 import { IoReturnDownBackOutline } from "react-icons/io5";
 
 const ProjectInfo = ({ data }) => {
+  const liveSite = data.livePage;
+
+  const LiveSiteButton = () => {
+    {
+      data.link.map((link) => {
+        <a className="staticButton" href={link} target="_blank" key="link">
+          live site
+        </a>;
+      });
+    }
+  };
+
+  const GitSiteButton = () => {
+    {
+      data.link.map((link) => {
+        <a className="staticButton" href={link} target="_blank" key="link">
+          git hub
+        </a>;
+      });
+    }
+  };
+
   return (
     <div className="max-w-6xl mx-auto relative flex flex-col gap-6">
       {/* demo video */}
       <div className="flex flex-row items-center gap-4 p-6 ">
         <IoReturnDownBackOutline color="orange" size={22} />
-        <a href="/#projects" className="font-secondary text-black hover:text-orange">
+        <a
+          href="/#projects"
+          className="font-secondary text-black hover:text-orange"
+        >
           back to home
         </a>
       </div>
@@ -28,15 +53,29 @@ const ProjectInfo = ({ data }) => {
         {/* short summary */}
         <p className="font-secondary text-body">{data.summary}</p>
         {/* live site */}
-        {data.livePage ? (
-          <a className="staticButton" href={data.link} target="_blank">
-            live site
-          </a>
-        ) : (
-          <a className="staticButton" href={data.link} target="_blank">
-            git hub
-          </a>
-        )}
+        <div className="flex flex-row justify-evenly align-center">
+          {liveSite
+            ? data.link.map((link) => (
+                <a
+                  className="staticButton"
+                  href={link}
+                  target="_blank"
+                  key="link"
+                >
+                  live site
+                </a>
+              ))
+            : data.link.map((link) => (
+                <a
+                  className="staticButton"
+                  href={link}
+                  target="_blank"
+                  key="link"
+                >
+                  git hub
+                </a>
+              ))}
+        </div>
         {/* images */}
         {/* project explanation */}
         <h4 className="font-primary uppercase tracking-widest text-xl text-orange mt-6">

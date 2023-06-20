@@ -45,7 +45,7 @@ const ProjectCard = ({ title, summary, image, alt, tags, gitHub, slug }) => {
           ))}
         </div>
         <div className="flex flex-row items-center gap-10 mt-4 mb-6">
-          <Link className="primaryButton" href={fullSlug}>view project</Link>
+          <Link className="primaryButton" href={fullSlug} target="_blank">view project</Link>
           <a className="primaryButton" href={gitHub} target="_blank">
             git hub
           </a>

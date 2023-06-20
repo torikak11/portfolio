@@ -43,7 +43,8 @@ export const skills = [
   },
   {
     name: "Express.js",
-    image: "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/skills/express.png",
+    image:
+      "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/skills/express.png",
     alt: "Logo of Express.js",
   },
   {
@@ -94,7 +95,7 @@ export const projects = [
     alt: "A screenshot of the Sprout mobile app",
     tags: ["React Native", "Node.js", "Express", "MongoDB"],
     gitHub: "https://github.com/torikak11/sprout",
-    slug: "sprout"
+    slug: "sprout",
   },
   {
     title: "Recipe Generator",
@@ -105,7 +106,7 @@ export const projects = [
     alt: "A screenshot of the Recipe Generator web page",
     tags: ["React", "Next.js", "REST API", "Tailwind"],
     gitHub: "https://github.com/torikak11/recipe-generator",
-    slug: "recipe-generator"
+    slug: "recipe-generator",
   },
   {
     title: "Color Picker Chrome Extension",
@@ -116,7 +117,7 @@ export const projects = [
     alt: "A screenshot of the Color Picker Chrome Extension",
     tags: ["HTML5", "CSS", "JavaScript"],
     gitHub: "https://github.com/torikak11/color-picker-chrome-extension",
-    slug: "color-picker"
+    slug: "color-picker",
   },
 ];
 
@@ -128,13 +129,18 @@ export const projectInfo = [
     alt: "A screenshot of the Sprout Mobile App",
     summary:
       "A goal setting mobile app where the user can set their goals to a plant and watch it grow as they achieve their goal.",
-    link: "https://github.com/torikak11/sprout",
-    link02: "https://github.com/torikak11/sprout-api",
+    link: [
+      "https://github.com/torikak11/sprout",
+      "https://github.com/torikak11/sprout-api",
+    ],
     overview: [
-      ""
+      "The idea for sprout originated from a need of organizing my many goals into a fun, satisfying way. I wanted to create this app to be reward based as well as adding a calming aesthetic to the stress of managing all of your goals. Adding a reward of growing plants as you complete the steps was a way to add that reward and add a unique take on the traditional goal keeping app.",
+      "Sprout originally was only going to be developed as a frontend React Native app, but ended up having a seperate REST API developed for it as well. Developing the backend really helped me to understand more of how the frontend and backend of applications work together and intersect. Overall, while there were some frustrating moments trying to understand new technologies like node.js, the whole process was one of the most rewarding so far.",
     ],
     improvements: [
-      ""
+      "A future improvement that I have already started implementing is to add a habit tracker to the app as well. I have most of the logic done, but it still needs a little more polishing before production.",
+      "Other features to implement would be to add account features such as editing your user information and a store based system where you can earn points on the number of plants grown and trade them for more features in the app.",
+      "Lastly, I would like to explore backend optimization and performance. While this app is rather small, I would like to try different ways to optimize especially if I plan to add more features later.",
     ],
     livePage: false,
   },
@@ -145,13 +151,9 @@ export const projectInfo = [
     alt: "A screenshot of the Recipe Generator web app",
     summary:
       "A web app that let's the user input ingredients to generate relevant recipes.",
-    link: "https://recipe-generator-tawny.vercel.app",
-    overview: [
-      ""
-    ],
-    improvements: [
-      ""
-    ],
+    link: ["https://recipe-generator-tawny.vercel.app"],
+    overview: [""],
+    improvements: [""],
     livePage: true,
   },
   {
@@ -160,8 +162,8 @@ export const projectInfo = [
       "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/projects/color-picker-02.png",
     alt: "A screenshot of the Color Picker Chrome Extension",
     summary:
-      "A goal setting mobile app where the user can set their goals/habits to a plant and watch it grow as they achieve their goal.",
-    link: "https://github.com/torikak11/sprout",
+      "A simple color picker Chrome Extension that allows you to pick and save hex value colors from web pages.",
+    link: ["https://github.com/torikak11/color-picker-chrome-extension"],
     overview: [
       "This chrome extension was created with web developers and designers in mind. In my work of designing applications, I wanted a quick way to save the hex value of a color that stood out to me. If, for example, you really like a shade of blue on an image displayed in your website, this extension can save the hex value with ease!",
       "The extension allows you to choose hex values from the browser, copy a hex value to your clipboard, and also delete the color values not needed. All values not deleted will be saved for the next time you open the extension.",
