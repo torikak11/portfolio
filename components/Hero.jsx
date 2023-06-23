@@ -42,7 +42,7 @@ export default function Hero({ pageInfo, bgImages }) {
             duration: 1,
             delay: 1,
           }}
-          className="w-[700px] h-[400px] rounded-lg shadow-xl bg-beige-100-50 flex flex-col justify-center items-center z-10"
+          className="w-[400px] h-[300px] md:w-[700px] md:h-[400px] rounded-lg shadow-xl bg-beige-100-50 flex flex-col justify-center items-center z-10"
         >
           <h1 className="font-secondary text-lg text-black">
             <span>Hi, {text}</span>

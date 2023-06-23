@@ -41,7 +41,7 @@ const ProjectCard = ({ title, summary, image, alt, tags, gitHub, slug }) => {
         <p className="font-secondary ">{summary}</p>
         <div className="flex flex-row items-end gap-2">
           {tags.map((tag) => (
-            <SkillTags tag={tag} />
+            <SkillTags tag={tag} key={tags} />
           ))}
         </div>
         <div className="flex flex-row items-center gap-10 mt-4 mb-6">

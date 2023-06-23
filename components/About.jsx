@@ -32,7 +32,7 @@ const About = () => {
           viewport={{
             once: true,
           }}
-          className="bg-beige-100/60 py-10 px-8 rounded-lg shadow-xl z-10 flex flex-col gap-6 items-center justify-center"
+          className="bg-beige-100/60 py-10 px-4 mx-4 md:px-8 rounded-lg shadow-xl z-10 flex flex-col gap-6 items-center justify-center"
         >
           <p className="font-secondary">
             <span className="text-orange text-lg">Hello again!</span> Thanks for
@@ -46,7 +46,7 @@ const About = () => {
           </p>
           <p className="font-secondary">
             When I am not coding, you can find me exploring the{" "}
-            <span className="text-orange">outdoors</span> with my husband,
+            <span className="text-orange">outdoors</span> with my husband,{" "}
             <span className="text-orange">traveling</span> to new places,
             playing a <span className="text-orange">game</span> on my Nintendo
             Switch, or enjoying a good <span className="text-orange">book</span>

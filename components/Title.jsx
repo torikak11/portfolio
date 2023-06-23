@@ -21,12 +21,12 @@ const Title = ({ name }) => {
       viewport={{
         once: true,
       }}
-      className="hidden lg:flex flex-col w-[70px] justify-center"
+      className="hidden lg:flex flex-col w-[60px] justify-center"
     >
-      <h2 className="font-primary text-7xl uppercase text-orange text-center">
+      <h2 className="font-primary text-6xl uppercase text-orange text-center">
         {firstLetter}
       </h2>
-      <h2 className="font-primary text-7xl uppercase break-words text-center leading-tight">
+      <h2 className="font-primary text-6xl uppercase break-words text-center leading-tight">
         {lastLetters}
       </h2>
     </motion.div>

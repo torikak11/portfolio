@@ -42,7 +42,7 @@ export const skills = [
     alt: "Logo of Node.js",
   },
   {
-    name: "Express.js",
+    name: "Express",
     image:
       "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/skills/express.png",
     alt: "Logo of Express.js",
@@ -134,7 +134,7 @@ export const projectInfo = [
       "https://github.com/torikak11/sprout-api",
     ],
     overview: [
-      "The idea for sprout originated from a need of organizing my many goals into a fun, satisfying way. I wanted to create this app to be reward based as well as adding a calming aesthetic to the stress of managing all of your goals. Adding a reward of growing plants as you complete the steps was a way to add that reward and add a unique take on the traditional goal keeping app.",
+      "The idea for sprout originated from a need of organizing my many goals into a fun, satisfying way. I wanted to create this app to be reward based as well as adding a calming aesthetic to the stress of managing all of my goals. Adding a reward of growing plants as you complete the steps was a way to add that reward and add a unique take on the traditional goal keeping app.",
       "Sprout originally was only going to be developed as a frontend React Native app, but ended up having a seperate REST API developed for it as well. Developing the backend really helped me to understand more of how the frontend and backend of applications work together and intersect. Overall, while there were some frustrating moments trying to understand new technologies like node.js, the whole process was one of the most rewarding so far.",
     ],
     improvements: [
