@@ -21,7 +21,7 @@
 }
 
 .primaryButton {
-  @apply font-primary text-base text-orange tracking-widest uppercase py-3 px-8 border-2 border-orange rounded-2xl transition duration-300 hover:bg-orange hover:text-white;
+  @apply font-primary text-base text-orange text-center tracking-widest uppercase py-3 px-8 border-2 border-orange rounded-2xl transition duration-300 hover:bg-orange hover:text-white;
 }
 
 .staticButton {

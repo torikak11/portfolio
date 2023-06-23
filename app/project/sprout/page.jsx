@@ -28,7 +28,7 @@ const Project = () => {
             className="rounded-xl object-contain"
           />
         </div>
-        <div className="px-36 flex flex-col justify-evenly gap-10 pb-24">
+        <div className="px-6 md:px-36 flex flex-col justify-evenly gap-10 pb-24">
           {/* title */}
           <h1 className="font-primary uppercase tracking-widest text-xl text-orange">
             {data.title}

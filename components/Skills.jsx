@@ -33,7 +33,7 @@ const Skills = () => {
           viewport={{
             once: true,
           }}
-          className="bg-beige-100/60 p-2 mx-4 md:p-16 rounded-lg shadow-xl z-10 flex flex-col items-center justify-center"
+          className="bg-beige-100/60 p-4 mx-4 md:p-16 rounded-lg shadow-xl z-10 flex flex-col items-center justify-center"
         >
           <div className="grid grid-cols-3 md:grid-cols-5 gap-4 md:gap-12">
             {skills.map((skill) => (
