@@ -58,7 +58,7 @@ const Contact = () => {
           viewport={{
             once: true,
           }}
-          className="bg-beige-100/60 py-16 px-4 mx-4 md:px-24 rounded-lg shadow-xl z-10 flex flex-col gap-10 items-center justify-center"
+          className="bg-beige-100/60 py-16 px-4 mx-10 md:px-24 rounded-lg shadow-xl z-10 flex flex-col gap-10 items-center justify-center"
         >
           <p className="font-secondary text-center">
             If you have any questions, comments, or just want to have a quick
