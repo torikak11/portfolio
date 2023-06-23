@@ -36,7 +36,7 @@ const Project = () => {
           {/* short summary */}
           <p className="font-secondary text-body">{data.summary}</p>
           {/* live site */}
-          <div className="flex flex-row justify-evenly align-center">
+          <div className="flex md:flex-row justify-evenly align-center">
             <a className="staticButton" href={data.link[0]} target="_blank">
               Sprout GitHub
             </a>
