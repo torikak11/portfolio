@@ -160,7 +160,7 @@ export const projectInfo = [
       "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/projects/color-picker-02.png",
     alt: "A screenshot of the Color Picker Chrome Extension",
     summary:
-      "A goal setting mobile app where the user can set their goals/habits to a plant and watch it grow as they achieve their goal.",
+      "A simple color picker Chrome Extension that allows you to pick and save hex value colors from web pages.",
     link: "https://github.com/torikak11/sprout",
     overview: [
       "This chrome extension was created with web developers and designers in mind. In my work of designing applications, I wanted a quick way to save the hex value of a color that stood out to me. If, for example, you really like a shade of blue on an image displayed in your website, this extension can save the hex value with ease!",
