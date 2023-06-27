@@ -25,7 +25,7 @@ const ProjectCard = ({ title, summary, image, alt, tags, gitHub, slug }) => {
       viewport={{
         once: true,
       }}
-      className="md:pr-4 h-[800px] md:h-[340px] rounded-lg shadow-xl bg-beige-100-50 flex flex-col md:flex-row gap-10 justify-center md:justify-between items-center z-10"
+      className="md:pr-4 px-4 md:px-0 mx-4 h-[800px] md:h-[340px] rounded-lg shadow-xl bg-beige-100-50 flex flex-col md:flex-row gap-10 justify-center md:justify-between items-center z-10"
     >
       <div className="w-9/12 md:w-5/12 h-full">
         <img
@@ -41,11 +41,11 @@ const ProjectCard = ({ title, summary, image, alt, tags, gitHub, slug }) => {
         <p className="font-secondary ">{summary}</p>
         <div className="flex flex-row items-end gap-2">
           {tags.map((tag) => (
-            <SkillTags tag={tag} />
+            <SkillTags tag={tag} key={tags} />
           ))}
         </div>
         <div className="flex flex-row items-center gap-10 mt-4 mb-6">
-          <Link className="primaryButton" href={fullSlug}>view project</Link>
+          <Link className="primaryButton" href={fullSlug} target="_blank">view project</Link>
           <a className="primaryButton" href={gitHub} target="_blank">
             git hub
           </a>
