@@ -66,6 +66,12 @@ export const skills = [
     alt: "Logo of Python",
   },
   {
+    name: "C",
+    image:
+      "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/skills/c.png",
+    alt: "Logo of C",
+  },
+  {
     name: "Git",
     image:
       "https://toriadev-portfolio.s3.us-west-2.amazonaws.com/skills/git.png",
