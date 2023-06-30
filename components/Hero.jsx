@@ -9,8 +9,8 @@ import Link from "next/link";
 export default function Hero({ pageInfo, bgImages }) {
   const [text, count] = useTypewriter({
     words: [
-      "I'm a Full-Stack Developer.",
-      "I build things for the web.",
+      "a Full-Stack Developer.",
+      "a Software Engineer",
       "I'm Victoria Lizzi.",
     ],
     loop: 1,
@@ -45,7 +45,7 @@ export default function Hero({ pageInfo, bgImages }) {
           className="w-[400px] h-[300px] md:w-[700px] md:h-[400px] rounded-lg shadow-xl bg-beige-100-50 flex flex-col justify-center items-center z-10"
         >
           <h1 className="font-secondary text-lg text-black">
-            <span>Hi, {text}</span>
+            <span>Hi, I'm {text}</span>
             <Cursor cursorColor="#E5A061" />
           </h1>
           <p className="mx-6 mt-5 text-center font-secondary text-black">
